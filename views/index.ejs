@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Url shortener</title>
+</head>
+<body class="bg-secondary">
+    
+
+    <h1 class="text-warning text-uppercase text-center">URL shortener</h1>
+    <p class="text-center text-warning text-uppercase" id="errormsg"></p>
+    <div class="container">
+
+    
+    <form onsubmit="return validator()" action="/" method="post" autocomplete="off">
+         <div class="form-group">
+            <input class="form-control" type="url" name="url" id="url" placeholder="Enter the url">
+         </div>
+        
+        <div class="form-group m-4">
+            <input class="btn btn-success" type="submit"  value="Click">
+        </div>
+        
+
+    </form>
+</div>
+
+<script src="index.js" ></script>
+
+</body>
+</html>
